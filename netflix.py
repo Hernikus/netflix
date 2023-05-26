@@ -62,7 +62,7 @@ netflix_data['genre'] = split_col[0]
 # make a new csv for cleaned data
 netflix_data.to_csv('netflix_cleaned.csv', index=False)
 
-# Filter the DataFrame based on the color
+# Filter the DataFrame based on the type
 movie = netflix_data[netflix_data['type'] == 'Movie'] 
 tv_show = netflix_data[netflix_data['type'] == 'TV Show'] 
 
