@@ -45,7 +45,10 @@ netflix_data['month_added'] = pd.to_datetime(netflix_data['date_added']).dt.strf
 netflix_data['year_added'] = pd.to_datetime(netflix_data['date_added']).dt.strftime('%Y')
 netflix_data['date_added'] = pd.to_datetime(netflix_data['date_added']).dt.strftime('%d')
 
-# Change data type of 'year_added' column to integer
+# Cek all data type
+netflix_data.info()
+
+# Change data type of 'year_added' and 'date_added' column to integer
 netflix_data['date_added'] = netflix_data['date_added'].astype(int)
 netflix_data['year_added'] = netflix_data['year_added'].astype(int)
 
